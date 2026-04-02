@@ -1,0 +1,241 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 2743 >>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 44 794 Tm
+(FULL PROJECT REPORT) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Project: Asset Defender) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+() Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Problem Statement) Tj
+0 -13 Td
+(Social media users face persistent risks from fake profiles, impersonation campaigns, spam ) Tj
+0 -13 Td
+(conversations, and phishing attempts. Most users cannot reliably identify sophisticated scam behavior,) Tj
+0 -13 Td
+( especially when attackers blend social engineering language with seemingly authentic profile ) Tj
+0 -13 Td
+(metadata. Existing controls are either platform-side and opaque or lightweight local filters with low ) Tj
+0 -13 Td
+(explainability. The project problem is to design and implement a practical system that detects profile) Tj
+0 -13 Td
+( and message risk in near real time, explains why a score was assigned, stores historical evidence for) Tj
+0 -13 Td
+( audit, and supports both end-user and administrator workflows without requiring enterprise-grade ) Tj
+0 -13 Td
+(infrastructure.) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Chapter 1 - Introduction) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Asset Defender is a hybrid analytics platform for fake profile and scam message detection. The report ) Tj
+0 -13 Td
+(captures architecture, implementation, and validation.) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Chapter 2 - Objectives) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(- Detect fake profile behavior using structural and content features.) Tj
+0 -13 Td
+(- Detect spam/scam messages using lexical and model-based signals.) Tj
+0 -13 Td
+(- Provide explainable recommendations and confidence.) Tj
+0 -13 Td
+(- Support user and admin dashboards with persistent history.) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Chapter 3 - System Architecture) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Frontend: React + Vite. Backend: Node.js + Express. Database: SQLite. ML: Python + scikit-learn ) Tj
+0 -13 Td
+(models. Integration includes browser extension scripts.) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Chapter 4 - Modules) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(1. Authentication module) Tj
+0 -13 Td
+(2. Profile analysis module) Tj
+0 -13 Td
+(3. Message analysis module) Tj
+0 -13 Td
+(4. Behavior analysis module) Tj
+0 -13 Td
+(5. Risk fusion module) Tj
+0 -13 Td
+(6. Persistence module) Tj
+0 -13 Td
+(7. Dashboard and admin analytics module) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Chapter 5 - API Endpoints) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(POST /api/signup) Tj
+0 -13 Td
+(POST /api/login) Tj
+0 -13 Td
+(POST /api/admin/login) Tj
+0 -13 Td
+(GET /api/admin/users) Tj
+0 -13 Td
+(GET /api/admin/analyses) Tj
+0 -13 Td
+(GET /api/admin/stats) Tj
+0 -13 Td
+(GET /api/dashboard) Tj
+0 -13 Td
+(POST /api/scrape) Tj
+0 -13 Td
+(POST /api/analyses) Tj
+0 -13 Td
+(POST /api/analyses/client) Tj
+0 -13 Td
+(GET /api/analyses) Tj
+0 -13 Td
+(GET /api/analyses/:id) Tj
+0 -13 Td
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Length 2113 >>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 44 794 Tm
+() Tj
+0 -13 Td
+(Chapter 6 - Database Design) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Tables: users, profile_analysis, message_analysis, behavior_analysis, final_predictions. Foreign key ) Tj
+0 -13 Td
+(linkage by user_id.) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Chapter 7 - ML and Heuristics) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Profile models: RF, GB, LR, XGBoost. Message models: MultinomialNB and LR with TF-IDF. Heuristic ) Tj
+0 -13 Td
+(analyzers compute risk features from bio, username, captions, comments, and message patterns.) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Chapter 8 - Evaluation) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Model Evaluation Snapshot) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(- Domain: profile, Model: random_forest, Accuracy: 0.9310, Precision: 0.9167, Recall: 0.9483, F1: ) Tj
+0 -13 Td
+(0.9322, ROC-AUC: 0.9854) Tj
+0 -13 Td
+(- Domain: profile, Model: gradient_boosting, Accuracy: 0.9224, Precision: 0.9153, Recall: 0.9310, F1: ) Tj
+0 -13 Td
+(0.9231, ROC-AUC: 0.9834) Tj
+0 -13 Td
+(- Domain: profile, Model: logistic_regression, Accuracy: 0.9483, Precision: 0.9815, Recall: 0.9138, ) Tj
+0 -13 Td
+(F1: 0.9464, ROC-AUC: 0.9887) Tj
+0 -13 Td
+(- Domain: profile, Model: xgboost, Accuracy: 0.9310, Precision: 0.9310, Recall: 0.9310, F1: 0.9310, ) Tj
+0 -13 Td
+(ROC-AUC: 0.9831) Tj
+0 -13 Td
+(- Domain: message, Model: multinaive, Accuracy: 0.9740, Precision: 0.9918, Recall: 0.8121, F1: 0.8930,) Tj
+0 -13 Td
+( ROC-AUC: 0.9904) Tj
+0 -13 Td
+(- Domain: message, Model: message_logistic_regression, Accuracy: 0.9614, Precision: 1.0000, Recall: ) Tj
+0 -13 Td
+(0.7114, F1: 0.8314, ROC-AUC: 0.9871) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Chapter 9 - Security) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(bcrypt password hashing, JWT token authentication, admin role gate, CORS allowlist, security headers, ) Tj
+0 -13 Td
+(rate limits, and login throttling.) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Chapter 10 - Conclusion) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(The project delivers a practical and extensible anti-scam analysis platform, with clear opportunities ) Tj
+0 -13 Td
+(for multilingual support, model registry, drift monitoring, and stronger CI/CD automation.) Tj
+0 -13 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Type /Pages /Count 2 /Kids [3 0 R 5 0 R] >>
+endobj
+7 0 obj
+<< /Type /Catalog /Pages 6 0 R >>
+endobj
+8 0 obj
+<< /Title (Asset Defender Full Project Report) /Producer (Asset Defender Report Generator) /CreationDate (D:20260308053234Z) >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000002874 00000 n 
+0000003000 00000 n 
+0000005165 00000 n 
+0000005291 00000 n 
+0000005354 00000 n 
+0000005403 00000 n 
+trailer
+<< /Size 9 /Root 7 0 R /Info 8 0 R >>
+startxref
+5546
+%%EOF

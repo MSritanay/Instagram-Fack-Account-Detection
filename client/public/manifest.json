@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Authentication",
+  "version": "1.0",
+  "description": "An extension for authenticating with the Instagram analysis dashboard.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "nativeMessaging"
+  ],
+  "background": {  
+      "service_worker": "background.js"
+    },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["logger.js", "error_handler.js", "content.js", "message_content.js", "profile_button_injector.js", "instagram_analyzer.js"],
+      "css": ["instagram_analyzer.css"]
+    },
+    {
+      "matches": ["http://localhost:3001/*"],
+      "js": ["dashboard_content.js"]
+    }
+  ],
+  "host_permissions": [
+    "http://localhost:3000/",
+    "http://localhost:3001/",
+    "http://localhost:5000/",
+    "http://localhost:5001/"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["keywords.json", "rules.html", "rules.css", "rules.js", "rules.txt", "profile_datasets.js", "profile_model.js", "interceptor.js", "fetch_script.js"],
+      "matches": ["https://www.instagram.com/*"]
+    }
+  ]
+
+}

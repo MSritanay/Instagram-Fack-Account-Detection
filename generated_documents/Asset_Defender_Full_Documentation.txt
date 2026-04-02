@@ -1,0 +1,50 @@
+FULL TECHNICAL DOCUMENTATION
+
+Project: Asset Defender
+
+
+
+1. Setup and Runtime
+
+- Root scripts: npm run dev, npm run dev:client, npm run dev:server, npm run regression:profile-scores
+- Server default port: 5000
+- Database location: server/database/app.db
+
+2. Directory Guide
+
+client/: React UI and extension assets
+server/: Express API and DB initialization
+server/ml/: model training, prediction, and evaluation scripts
+messagedatasets/ and profiledatset/: training data
+
+3. Frontend Documentation
+
+Core pages include Login, Signup, Dashboard, AnalyzePage, AnalysisResultPage, HistoryPage, and AdminDashboard. AnalyzePage supports scraping and manual content.
+
+4. Backend Documentation
+
+Express routes implement authentication, admin analytics, dashboard data, scraping trigger, and analysis persistence. JWT middleware protects user-scoped and admin-scoped resources.
+
+5. ML Documentation
+
+Training scripts: server/ml/train_model.py and server/ml/train_message_models.py. Evaluation script: server/ml/evaluation.py. Artifacts saved as .pkl files for inference.
+
+6. Heuristic Engine Documentation
+
+Profile heuristics inspect follower ratios, engagement, profile completeness, risky bio terms, suspicious username patterns, and content behavior. Message heuristics inspect urgency, manipulation phrases, scam markers, repetition, and burst patterns.
+
+7. Data Model Documentation
+
+users table stores credentials and account role. analysis tables store feature snapshots and risk components. final_predictions stores final risk and explanation payload.
+
+8. Operational Documentation
+
+Logs are available via server.log and server.err.log. Admin endpoints provide user list, aggregated stats, and analysis views for governance.
+
+9. Extension Documentation
+
+Manifest V3 scripts in client/public include popup, background, and Instagram analyzer logic for profile/message extraction and UI interaction.
+
+10. Known Constraints
+
+No full CI/CD pipeline in repository, limited automated test coverage, and legal policy documents for scraping should be formalized before production rollout.

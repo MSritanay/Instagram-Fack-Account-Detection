@@ -1,0 +1,70 @@
+.model-comparison-container {
+  padding: 40px;
+  color: #fff;
+  perspective: 1000px;
+}
+
+.model-comparison-container .header-3d {
+  margin-bottom: 20px;
+}
+
+.model-comparison-container [data-state=open] > button,
+.model-comparison-container [data-state=closed] > button {
+  font-family: 'Orbitron', sans-serif;
+  color: #00eaff;
+  text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff;
+  background: rgba(10, 25, 47, 0.5);
+  border: 1px solid rgba(0, 234, 255, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0 5px 15px rgba(0, 234, 255, 0.1);
+}
+
+.model-comparison-container [data-state=closed] > button:hover {
+  transform: translateZ(10px) rotateX(5deg);
+  box-shadow: 0 15px 25px rgba(0, 234, 255, 0.3);
+}
+
+.model-comparison-container [data-state=open] > button {
+  background: rgba(0, 234, 255, 0.2);
+  transform: translateZ(5px) rotateX(2deg);
+}
+
+.model-comparison-container [data-state=open] > div {
+  background: rgba(10, 25, 47, 0.3);
+  border: 1px solid rgba(0, 234, 255, 0.2);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 16px;
+  backdrop-filter: blur(5px);
+  animation: slideDown 0.5s ease-out forwards;
+  transform-origin: top center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+.model-comparison-container p {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.model-comparison-container strong {
+    color: #00eaff;
+    font-weight: bold;
+}

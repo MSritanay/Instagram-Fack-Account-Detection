@@ -1,0 +1,251 @@
+{
+  "version": "1.0.0",
+  "title": "Instagram Profile Risk Pattern Catalog",
+  "categories": [
+    {
+      "id": "identity_verification",
+      "name": "Identity & Verification Patterns",
+      "range": "1-10",
+      "patterns": [
+        "Large follower account without verification",
+        "Claims official but not verified",
+        "Uses celebrity photos but different username",
+        "Bio claims CEO or Founder with no company link",
+        "Bio claims government or NGO identity without proof",
+        "Multiple authority emojis to fake credibility",
+        "Fake fan account pretending to be real account",
+        "Name mismatch between username and bio identity",
+        "Profile picture inconsistent with account theme",
+        "Bio claims awards or recognition not referenced elsewhere"
+      ]
+    },
+    {
+      "id": "follower_network",
+      "name": "Follower Network Patterns",
+      "range": "11-20",
+      "patterns": [
+        "Very high followers with very low engagement",
+        "Following thousands but low followers",
+        "Followers spike suddenly in short time",
+        "Large account following zero users",
+        "High followers but posts very few",
+        "Followers mostly private accounts",
+        "Followers mostly recently created accounts",
+        "Many followers with numeric usernames",
+        "Engagement pods with repeated commenters",
+        "Repetitive bot-like comments across posts"
+      ]
+    },
+    {
+      "id": "posting_behavior",
+      "name": "Posting Behavior Patterns",
+      "range": "21-30",
+      "patterns": [
+        "Extremely high posting frequency",
+        "Long inactivity followed by posting burst",
+        "Content copied from other creators",
+        "Reposting viral content without attribution",
+        "Same caption repeated across posts",
+        "Only reels posted",
+        "Posts deleted frequently",
+        "Identical thumbnails across posts",
+        "Content style changes drastically overnight",
+        "Multiple posts within seconds"
+      ]
+    },
+    {
+      "id": "caption_language",
+      "name": "Caption & Language Patterns",
+      "range": "31-40",
+      "patterns": [
+        "DM me to earn money",
+        "Guaranteed profit",
+        "Limited slots available",
+        "Send message for investment opportunity",
+        "Crypto price predictions with certainty",
+        "Giveaway announcements with unrealistic rewards",
+        "Links shortened with unknown services",
+        "Urgency language like act now or last chance",
+        "Referral codes repeated across posts",
+        "Promotional hashtags unrelated to content"
+      ]
+    },
+    {
+      "id": "link_funnel",
+      "name": "Link & Funnel Patterns",
+      "range": "41-50",
+      "patterns": [
+        "Telegram group links",
+        "WhatsApp investment group links",
+        "Discord trading groups",
+        "Linktree with many affiliate links",
+        "Crypto exchange referral links",
+        "External payment requests",
+        "NFT minting links",
+        "Unknown investment websites",
+        "Google form signup for investment",
+        "Multiple external redirect links"
+      ]
+    },
+    {
+      "id": "engagement_manipulation",
+      "name": "Engagement Manipulation Patterns",
+      "range": "51-60",
+      "patterns": [
+        "Comments disabled on most posts",
+        "Comment sections filled with DM sent",
+        "Giveaway bots commenting repeatedly",
+        "Comment farming prompts like type YES",
+        "Like counts extremely low for follower size",
+        "Identical emoji comments from many users",
+        "Sudden engagement spikes on specific posts",
+        "Many comments with generic praise",
+        "Engagement only from small repeated group",
+        "Influencer engagement pods"
+      ]
+    },
+    {
+      "id": "content_style",
+      "name": "Content Style Patterns",
+      "range": "61-70",
+      "patterns": [
+        "Clickbait thumbnails",
+        "Shock reaction faces",
+        "Fake luxury lifestyle imagery",
+        "Screenshots of supposed trading profits",
+        "Screenshots of fake bank balances",
+        "AI-generated influencer photos",
+        "Stock photos pretending to be personal life",
+        "Crypto charts used as authority signals",
+        "Screenshots of Telegram chats",
+        "Fake testimonials"
+      ]
+    },
+    {
+      "id": "giveaway_promotion",
+      "name": "Giveaway & Promotion Patterns",
+      "range": "71-80",
+      "patterns": [
+        "Crypto giveaway scams",
+        "Send 1 ETH get 2 ETH back style scams",
+        "Fake brand giveaways",
+        "Asking users to tag many friends",
+        "Asking users to send wallet addresses",
+        "Giveaway requiring payment fee",
+        "Fake influencer collaboration giveaways",
+        "Winner will be announced tomorrow repeatedly",
+        "Giveaway posts but no winner announcement",
+        "Giveaway bots replying automatically"
+      ]
+    },
+    {
+      "id": "account_lifecycle",
+      "name": "Account Lifecycle Patterns",
+      "range": "81-90",
+      "patterns": [
+        "Username changed recently",
+        "Account previously inactive for years",
+        "Account theme changed completely",
+        "Old posts deleted suddenly",
+        "Account sold to new owner",
+        "Old content unrelated to current niche",
+        "Bio changed frequently",
+        "Account repurposed for crypto promotions",
+        "Sudden shift from memes to investment",
+        "Old comments referencing different content"
+      ]
+    },
+    {
+      "id": "high_risk_domains",
+      "name": "High-Risk Domain Patterns",
+      "range": "91-100",
+      "patterns": [
+        "Crypto trading signals",
+        "Forex trading mentorship",
+        "Binary options promotion",
+        "NFT investment groups",
+        "Dropshipping get rich quick schemes",
+        "Online betting promotions",
+        "Adult spam accounts",
+        "Fake job recruitment scams",
+        "Fake charity donation accounts",
+        "Fake celebrity impersonation accounts"
+      ]
+    }
+  ],
+  "top20_power_signals": [
+    "Credential transfer language in bio captions comments",
+    "Risky external links and unknown domains",
+    "Impersonation similarity to known entities",
+    "Official claim without verification or proof",
+    "Follower engagement mismatch",
+    "Comment authenticity collapse",
+    "Sudden historical topic pivot",
+    "Repurposing via old post deletion and bio username changes",
+    "Giveaway scam pattern with wallet requests",
+    "Funnel path to Telegram WhatsApp Discord",
+    "Unnatural posting cadence and automation",
+    "Low quality follower graph",
+    "Scam keyword density",
+    "Suspicious link concentration",
+    "Profit screenshot and testimonial motifs",
+    "Engagement pod signatures",
+    "Comment farming bait",
+    "Authority spoofing words without proof",
+    "Lifecycle volatility",
+    "Report complaint density"
+  ],
+  "formulas": {
+    "robust_missing_data_safe": {
+      "layer_scores": [
+        "IdentityScore",
+        "NetworkScore",
+        "ContentScore",
+        "EngagementScore",
+        "BehaviorScore",
+        "ContextScore"
+      ],
+      "risk_base": "RiskBase = 0.20*Identity + 0.20*Network + 0.20*Content + 0.20*Engagement + 0.10*Behavior + 0.10*Context",
+      "completeness": "Completeness = observed_signals / expected_signals",
+      "confidence": "Confidence = clamp(0.4 + 0.6*Completeness, 0, 1)",
+      "critical_rule": "Missing signals are unknown evidence and do not increase risk by themselves",
+      "final_risk": "FinalRisk = RiskBase + HardFraudBoost - InstitutionalCap",
+      "classification": [
+        "0.00-0.30 Legitimate",
+        "0.31-0.50 Low Risk",
+        "0.51-0.70 Suspicious",
+        "0.71-1.00 High Risk"
+      ],
+      "trust_tier_rule": "If verified and large established history and no hard fraud then force risk <= 0.30 and trust tier Strong Legit"
+    },
+    "clean_variable_weight_structure": {
+      "core": "R = w1*I + w2*N + w3*B + w4*C + w5*E + w6*L + w7*T + w8*D",
+      "constraint": "sum(wi) = 1",
+      "identity": "I = a1*V + a2*P + a3*A + a4*U",
+      "network": "N = b1*Fr + b2*Fq + b3*Fs + b4*Fa",
+      "behavior": "B = g1*Pf + g2*Pv + g3*Pd + g4*Pc",
+      "content": "C = d1*Sc + d2*Kc + d3*Hc + d4*Mc",
+      "engagement": "E = e1*Le + e2*Ce + e3*Re + e4*Ue",
+      "link_funnel": "L = z1*Lp + z2*Rl + z3*Fl",
+      "temporal": "T = h1*At + h2*Gt + h3*Dt",
+      "domain": "D = t1*Nd + t2*Pd + t3*Cd",
+      "classification": [
+        "R < 0.25 Low Risk",
+        "0.25 <= R < 0.50 Moderate Risk",
+        "0.50 <= R < 0.75 High Risk",
+        "R >= 0.75 Critical Risk"
+      ],
+      "confidence": "Confidence = DataCoverage * EvidenceQuality"
+    }
+  },
+  "real_world_breakers": [
+    "Verified institutional accounts with missing timestamps should not be forced to uncertain trust",
+    "Huge meme pages with low engagement need account-type baseline priors",
+    "New legitimate startups must not be over-penalized for low history",
+    "Hacked verified accounts need abrupt behavior-shift detection",
+    "Unverified local government or NGO pages need external proof consistency checks",
+    "Private accounts need missing-data caps not risk inflation",
+    "Campaign spikes must be normalized against event windows",
+    "Multilingual scam content needs language-aware lexicons"
+  ]
+}

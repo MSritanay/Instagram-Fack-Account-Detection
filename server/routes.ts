@@ -1,0 +1,10 @@
+import type { Express } from "express";
+import { createServer, type Server } from "http";
+import { storage } from "./storage";
+import { api } from "@shared/routes";
+import { z } from "zod";
+import { registerAuthRoutes } from "./auth";
+import { isAuthenticated, isAdmin } from "./middleware";
+import { db } from "./db";
+import { users, analyses } from "@shared/schema";
+import { count, eq } from "drizzle-orm";

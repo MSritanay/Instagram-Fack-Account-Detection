@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram Authentication</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div id="auth-view">
+    <h1>Instagram Authentication</h1>
+    <p>Please log in or sign up to access the dashboard.</p>
+    <button id="loginBtn">Open Dashboard</button>
+  </div>
+
+  <div id="main-view" style="display: none;">
+    <div class="header">
+      <h1 id="welcome-message">Welcome, User!</h1>
+      <button id="logoutBtn">Logout</button>
+    </div>
+
+    <div class="controls">
+      <button id="analyseProfileBtn" class="main-btn">Analyse Profile</button>
+      <button id="finalPredictionBtn" class="main-btn">Final Prediction (Combined)</button>
+      <button id="finalProfileOnlyBtn" class="main-btn">Final Prediction (Profile Only)</button>
+      <button id="finalMessageOnlyBtn" class="main-btn">Final Prediction (Message Only)</button>
+      <button id="openDashboardBtn" class="secondary-btn">Open Dashboard</button>
+      <button id="analyseMessageBtn" class="main-btn">Analyse Messages</button>
+    </div>
+
+    <div id="result">
+      <p id="analysis-timer">Elapsed: 0.0s</p>
+      <p id="analysis-phase">Status: Idle</p>
+      <p id="analysis-summary">Navigate to an Instagram page to use the analysis features.</p>
+      <div id="tier-legend">
+        <p class="tier-legend-title">Tier Legend</p>
+        <p class="tier-legend-item"><b>T1:</b> Core profile identity signals (username, followers, following, posts, verification).</p>
+        <p class="tier-legend-item"><b>T2:</b> Network/API consistency signals from scraped profile stats.</p>
+        <p class="tier-legend-item"><b>T3:</b> Media evidence signals (post URLs, captions, media details).</p>
+        <p class="tier-legend-item"><b>T4:</b> Behavioral depth signals (interactions plus posting-time/timestamp evidence).</p>
+      </div>
+    </div>
+    <div id="permission-view" style="display: none;">
+      <p id="permission-message">Do you want to perform a deep analysis?</p>
+      <button id="confirmDeepAnalysisBtn">Yes, Proceed</button>
+      <button id="cancelDeepAnalysisBtn">No, Cancel</button>
+    </div>
+  </div>
+
+  <script src="logger.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

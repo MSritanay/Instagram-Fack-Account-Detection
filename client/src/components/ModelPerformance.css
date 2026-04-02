@@ -1,0 +1,41 @@
+.model-performance-container {
+  margin-top: 40px;
+}
+
+.performance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.performance-card {
+  background: rgba(10, 25, 47, 0.5);
+  border: 1px solid rgba(0, 234, 255, 0.4);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.performance-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 234, 255, 0.2);
+}
+
+.performance-card h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00eaff;
+  margin-bottom: 16px;
+}
+
+.performance-card .accuracy {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.performance-card .dataset {
+  font-size: 0.9rem;
+  color: #a0b3d6;
+}

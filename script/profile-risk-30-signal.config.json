@@ -1,0 +1,23 @@
+{
+  "weights": {
+    "profile": 0.15,
+    "network": 0.20,
+    "content": 0.20,
+    "engagement": 0.20,
+    "behavioral": 0.15,
+    "context": 0.10
+  },
+  "classification": {
+    "legitimate_max": 0.30,
+    "low_risk_max": 0.50,
+    "suspicious_max": 0.70
+  },
+  "hard_overrides": {
+    "elite_verified_cap": 0.20,
+    "scam_floor": 0.75
+  },
+  "evidence_confidence": {
+    "high_min": 0.75,
+    "medium_min": 0.50
+  }
+}

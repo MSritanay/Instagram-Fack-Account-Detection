@@ -1,0 +1,81 @@
+[
+  {
+    "name": "phishing-link-credential",
+    "messages": [
+      "Your account is suspended",
+      "verify now at http://bit.ly/secure-login",
+      "enter otp to restore access"
+    ],
+    "expectedTag": "phishing-risk"
+  },
+  {
+    "name": "hacker-social-engineering",
+    "messages": [
+      "Security team here",
+      "share otp now so we can confirm your account",
+      "do it immediately"
+    ],
+    "expectedTag": "hacker-risk"
+  },
+  {
+    "name": "scam-investment-trap",
+    "messages": [
+      "Join our trading group",
+      "Guaranteed profit daily",
+      "wallet verification required first"
+    ],
+    "expectedTag": "scam"
+  },
+  {
+    "name": "spam-template-broadcast",
+    "messages": [
+      "limited-time opportunity",
+      "join us",
+      "share the details",
+      "limited-time opportunity",
+      "join us"
+    ],
+    "expectedTag": "spam"
+  },
+  {
+    "name": "bot-repetition-burst",
+    "messages": [
+      "Hello",
+      "Hello",
+      "Hello",
+      "Send code",
+      "Send code",
+      "Send code"
+    ],
+    "expectedTag": "bot"
+  },
+  {
+    "name": "mixed-risk-overlap",
+    "messages": [
+      "security team here send otp",
+      "click http://bit.ly/verify-now",
+      "join us for guaranteed trading returns and wallet verification"
+    ],
+    "expectedTag": "mixed-risk"
+  },
+  {
+    "name": "likely-human-normal-chat",
+    "messages": [
+      "hii",
+      "are we still meeting today",
+      "thanks for helping with testing"
+    ],
+    "expectedTag": "likely-human"
+  },
+  {
+    "name": "recruitment-income-telegram-upi",
+    "messages": [
+      "Looking for business partners",
+      "frequently use upi",
+      "stable daily income",
+      "earn 1000+ inr daily",
+      "apply telegram @abc123"
+    ],
+    "expectedTag": "scam"
+  }
+]

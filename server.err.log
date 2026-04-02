@@ -1,0 +1,340 @@
+C:\Users\srika\.codex\tmp\arg0\codex-arg0O3A02C : The term 'C:\Users\srika\.codex\tmp\arg0\codex-arg0O3A02C' is not 
+recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if 
+a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ C:\Users\srika\.codex\tmp\arg0\codex-arg0O3A02C;C:\WINDOWS\system32;C ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...odex-arg0O3A02C:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\WINDOWS\system32 : The term 'C:\WINDOWS\system32' is not recognized as the name of a cmdlet, function, script file, 
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:1 char:49
++ ... rs\srika\.codex\tmp\arg0\codex-arg0O3A02C;C:\WINDOWS\system32;C:\WIND ...
++                                               ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\WINDOWS\system32:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\WINDOWS : The term 'C:\WINDOWS' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:69
++ ... odex\tmp\arg0\codex-arg0O3A02C;C:\WINDOWS\system32;C:\WINDOWS;C:\WIND ...
++                                                        ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\WINDOWS:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\WINDOWS\System32\Wbem : The term 'C:\WINDOWS\System32\Wbem' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At line:1 char:80
++ ... 3A02C;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WIND ...
++                                          ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\WINDOWS\System32\Wbem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\WINDOWS\System32\WindowsPowerShell\v1.0\ : The term 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\' is not recognized 
+as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was 
+included, verify that the path is correct and try again.
+At line:1 char:105
++ ... OWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WIND ...
++                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\WINDOWS\Syst...owerShell\v1.0\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\WINDOWS\System32\OpenSSH\ : The term 'C:\WINDOWS\System32\OpenSSH\' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the 
+path is correct and try again.
+At line:1 char:149
++ ... System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\node ...
++                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\WINDOWS\System32\OpenSSH\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+D:\node\ : The term 'D:\node\' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:178
++ ... WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\node\;C:\User ...
++                                                          ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\node\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Programs\Python\Python39\ : The term 
+'C:\Users\srika\AppData\Local\Programs\Python\Python39\' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:187
++ ... H\;D:\node\;C:\Users\srika\AppData\Local\Programs\Python\Python39\;C: ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...ython\Python39\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Programs\Python\Python39\Scripts\ : The term 
+'C:\Users\srika\AppData\Local\Programs\Python\Python39\Scripts\' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At line:1 char:242
++ ... n\Python39\;C:\Users\srika\AppData\Local\Programs\Python\Python39\Scr ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...thon39\Scripts\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Programs\Python\Python312\Scripts\ : The term 
+'C:\Users\srika\AppData\Local\Programs\Python\Python312\Scripts\' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At line:1 char:305
++ ... 39\Scripts\;C:\Users\srika\AppData\Local\Programs\Python\Python312\Sc ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...hon312\Scripts\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Programs\Python\Python312\ : The term 
+'C:\Users\srika\AppData\Local\Programs\Python\Python312\' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:369
++ ... 12\Scripts\;C:\Users\srika\AppData\Local\Programs\Python\Python312\;D ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...thon\Python312\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+D:\python\Scripts\ : The term 'D:\python\Scripts\' is not recognized as the name of a cmdlet, function, script file, 
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:1 char:425
++ ... a\AppData\Local\Programs\Python\Python312\;D:\python\Scripts\;D:\pyth ...
++                                                ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\python\Scripts\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+D:\python\ : The term 'D:\python\' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:444
++ ... ocal\Programs\Python\Python312\;D:\python\Scripts\;D:\python\;C:\User ...
++                                                        ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\python\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Microsoft\WindowsApps : The term 'C:\Users\srika\AppData\Local\Microsoft\WindowsApps' is 
+not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or 
+if a path was included, verify that the path is correct and try again.
+At line:1 char:455
++ ... ;D:\python\;C:\Users\srika\AppData\Local\Microsoft\WindowsApps;D:\VSC ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...oft\WindowsApps:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+D:\VSCODE\Microsoft : The term 'D:\VSCODE\Microsoft' is not recognized as the name of a cmdlet, function, script file, 
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:1 char:506
++ ... srika\AppData\Local\Microsoft\WindowsApps;D:\VSCODE\Microsoft VS Code ...
++                                               ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\VSCODE\Microsoft:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Roaming\npm : The term 'C:\Users\srika\AppData\Roaming\npm' is not recognized as the name of a 
+cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify 
+that the path is correct and try again.
+At line:1 char:538
++ ... CODE\Microsoft VS Code\bin;C:\Users\srika\AppData\Roaming\npm;C:\User ...
++                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\AppData\Roaming\npm:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Programs\Ollama : The term 'C:\Users\srika\AppData\Local\Programs\Ollama' is not 
+recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if 
+a path was included, verify that the path is correct and try again.
+At line:1 char:573
++ ... Data\Roaming\npm;C:\Users\srika\AppData\Local\Programs\Ollama;C:\User ...
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...Programs\Ollama:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Microsoft\WinGet\Packages\SQLite.SQLite_Microsoft.Winget.Source_8wekyb3d8bbwe : The term 
+'C:\Users\srika\AppData\Local\Microsoft\WinGet\Packages\SQLite.SQLite_Microsoft.Winget.Source_8wekyb3d8bbwe' is not 
+recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if 
+a path was included, verify that the path is correct and try again.
+At line:1 char:618
++ ... rams\Ollama;C:\Users\srika\AppData\Local\Microsoft\WinGet\Packages\SQ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...e_8wekyb3d8bbwe:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+c:\Users\srika\.vscode\extensions\openai.chatgpt-0.4.79-win32-x64\bin\windows-x86_64=d:\instagram 
+final\Asset-Defender\vir\Scripts; : The term 
+'c:\Users\srika\.vscode\extensions\openai.chatgpt-0.4.79-win32-x64\bin\windows-x86_64=d:\instagram 
+final\Asset-Defender\vir\Scripts;' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:726
++ ... kyb3d8bbwe;;c:\Users\srika\.vscode\extensions\openai.chatgpt-0.4.79-w ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (c:\Users\srika\...er\vir\Scripts;:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\WINDOWS\system32 : The term 'C:\WINDOWS\system32' is not recognized as the name of a cmdlet, function, script file, 
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:1 char:910
++ ... rs\srika\.codex\tmp\arg0\codex-arg0O3A02C;C:\WINDOWS\system32;C:\WIND ...
++                                               ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\WINDOWS\system32:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\WINDOWS : The term 'C:\WINDOWS' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:930
++ ... odex\tmp\arg0\codex-arg0O3A02C;C:\WINDOWS\system32;C:\WINDOWS;C:\WIND ...
++                                                        ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\WINDOWS:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\WINDOWS\System32\Wbem : The term 'C:\WINDOWS\System32\Wbem' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At line:1 char:941
++ ... 3A02C;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WIND ...
++                                          ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\WINDOWS\System32\Wbem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\WINDOWS\System32\WindowsPowerShell\v1.0\ : The term 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\' is not recognized 
+as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was 
+included, verify that the path is correct and try again.
+At line:1 char:966
++ ... OWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WIND ...
++                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\WINDOWS\Syst...owerShell\v1.0\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\WINDOWS\System32\OpenSSH\ : The term 'C:\WINDOWS\System32\OpenSSH\' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the 
+path is correct and try again.
+At line:1 char:1010
++ ... System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\node ...
++                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\WINDOWS\System32\OpenSSH\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+D:\node\ : The term 'D:\node\' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1039
++ ... WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\node\;C:\User ...
++                                                          ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\node\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Programs\Python\Python39\ : The term 
+'C:\Users\srika\AppData\Local\Programs\Python\Python39\' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:1048
++ ... H\;D:\node\;C:\Users\srika\AppData\Local\Programs\Python\Python39\;C: ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...ython\Python39\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Programs\Python\Python39\Scripts\ : The term 
+'C:\Users\srika\AppData\Local\Programs\Python\Python39\Scripts\' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At line:1 char:1103
++ ... n\Python39\;C:\Users\srika\AppData\Local\Programs\Python\Python39\Scr ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...thon39\Scripts\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Programs\Python\Python312\Scripts\ : The term 
+'C:\Users\srika\AppData\Local\Programs\Python\Python312\Scripts\' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At line:1 char:1166
++ ... 39\Scripts\;C:\Users\srika\AppData\Local\Programs\Python\Python312\Sc ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...hon312\Scripts\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Programs\Python\Python312\ : The term 
+'C:\Users\srika\AppData\Local\Programs\Python\Python312\' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:1230
++ ... 12\Scripts\;C:\Users\srika\AppData\Local\Programs\Python\Python312\;D ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...thon\Python312\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+D:\python\Scripts\ : The term 'D:\python\Scripts\' is not recognized as the name of a cmdlet, function, script file, 
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:1 char:1286
++ ... a\AppData\Local\Programs\Python\Python312\;D:\python\Scripts\;D:\pyth ...
++                                                ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\python\Scripts\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+D:\python\ : The term 'D:\python\' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1305
++ ... ocal\Programs\Python\Python312\;D:\python\Scripts\;D:\python\;C:\User ...
++                                                        ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\python\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Microsoft\WindowsApps : The term 'C:\Users\srika\AppData\Local\Microsoft\WindowsApps' is 
+not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or 
+if a path was included, verify that the path is correct and try again.
+At line:1 char:1316
++ ... ;D:\python\;C:\Users\srika\AppData\Local\Microsoft\WindowsApps;D:\VSC ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...oft\WindowsApps:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+D:\VSCODE\Microsoft : The term 'D:\VSCODE\Microsoft' is not recognized as the name of a cmdlet, function, script file, 
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:1 char:1367
++ ... srika\AppData\Local\Microsoft\WindowsApps;D:\VSCODE\Microsoft VS Code ...
++                                               ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\VSCODE\Microsoft:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Roaming\npm : The term 'C:\Users\srika\AppData\Roaming\npm' is not recognized as the name of a 
+cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify 
+that the path is correct and try again.
+At line:1 char:1399
++ ... CODE\Microsoft VS Code\bin;C:\Users\srika\AppData\Roaming\npm;C:\User ...
++                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\AppData\Roaming\npm:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Programs\Ollama : The term 'C:\Users\srika\AppData\Local\Programs\Ollama' is not 
+recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if 
+a path was included, verify that the path is correct and try again.
+At line:1 char:1434
++ ... Data\Roaming\npm;C:\Users\srika\AppData\Local\Programs\Ollama;C:\User ...
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...Programs\Ollama:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\srika\AppData\Local\Microsoft\WinGet\Packages\SQLite.SQLite_Microsoft.Winget.Source_8wekyb3d8bbwe : The term 
+'C:\Users\srika\AppData\Local\Microsoft\WinGet\Packages\SQLite.SQLite_Microsoft.Winget.Source_8wekyb3d8bbwe' is not 
+recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if 
+a path was included, verify that the path is correct and try again.
+At line:1 char:1479
++ ... rams\Ollama;C:\Users\srika\AppData\Local\Microsoft\WinGet\Packages\SQ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\srika\...e_8wekyb3d8bbwe:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+c:\Users\srika\.vscode\extensions\openai.chatgpt-0.4.79-win32-x64\bin\windows-x86_64 : The term 
+'c:\Users\srika\.vscode\extensions\openai.chatgpt-0.4.79-win32-x64\bin\windows-x86_64' is not recognized as the name 
+of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, 
+verify that the path is correct and try again.
+At line:1 char:1587
++ ... kyb3d8bbwe;;c:\Users\srika\.vscode\extensions\openai.chatgpt-0.4.79-w ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (c:\Users\srika\...\windows-x86_64:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 

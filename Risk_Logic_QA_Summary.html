@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Asset Defender Risk Logic Q&A Summary</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.45; color: #111; }
+h1 { font-size: 24px; margin-bottom: 4px; }
+h2 { font-size: 18px; margin-top: 24px; }
+.small { color: #444; margin-bottom: 16px; }
+ul, ol { margin-top: 6px; }
+li { margin: 4px 0; }
+.section { margin-bottom: 12px; }
+</style>
+</head>
+<body>
+<h1>Asset Defender Risk Logic Q&A Summary</h1>
+<div class="small">Generated on 2026-03-07</div>
+
+<h2>Q&A Summary</h2>
+<div class="section"><b>1) Source of truth in production</b>
+<ul>
+<li>Live popup verdict: popup-computed finalRisk.</li>
+<li>Persisted/reporting history: server final_predictions.risk_score.</li>
+<li>Current state: not guaranteed identical.</li>
+</ul>
+</div>
+
+<div class="section"><b>2) Unify weighted formula (0.3/0.7 vs 0.6/0.4)</b>
+<ul>
+<li>Yes, unify everywhere.</li>
+<li>Use one shared formula constant across popup, server, and reporting UI.</li>
+</ul>
+</div>
+
+<div class="section"><b>3) Rename “Moderate” / “modern” wording</b>
+<ul>
+<li>Yes, rename for clarity.</li>
+<li>Recommended labels: Very Low, Low, Medium, High, Critical.</li>
+</ul>
+</div>
+
+<div class="section"><b>4) Hard-threshold docs in one table</b>
+<ul>
+<li>Yes.</li>
+<li>Include risk bands, category rules (hacker/scam/bot/suspicious/genuine), override rules, and boundary examples.</li>
+</ul>
+</div>
+
+<div class="section"><b>5) Owner of final classification logic</b>
+<ul>
+<li>Recommended production owner: server.</li>
+<li>Popup can show provisional output until server confirmation.</li>
+<li>If both paths remain, enforce parity tests.</li>
+</ul>
+</div>
+
+<div class="section"><b>6) Persist final category + exact reasons</b>
+<ul>
+<li>Yes, required for auditability.</li>
+<li>Persist category, score, triggered rule IDs, feature values, model/heuristic version, timestamp, and source.</li>
+</ul>
+</div>
+
+<div class="section"><b>7) Conflict policy when popup and server disagree</b>
+<ul>
+<li>Server wins for stored/reporting/enforcement decisions.</li>
+<li>UI shows provisional client result, then replaces with confirmed server result.</li>
+<li>Log mismatch diffs.</li>
+</ul>
+</div>
+
+<div class="section"><b>8) Regression tests for thresholds (39/40, 69/70, etc.)</b>
+<ul>
+<li>Yes.</li>
+<li>Add below/at/above boundary tests, override-path tests, insufficient-evidence tests, and parity tests.</li>
+</ul>
+</div>
+
+<h2>Additional Questions Recommended</h2>
+<ol>
+<li>Should popup scoring be production-disabled and used only for offline/debug mode?</li>
+<li>Should every decision store a deterministic decision-trace payload for replay?</li>
+<li>What server confirmation SLA should replace provisional client output?</li>
+<li>Which threshold set is versioned as v1.0, and how do we roll back v1.1 safely?</li>
+</ol>
+
+</body>
+</html>

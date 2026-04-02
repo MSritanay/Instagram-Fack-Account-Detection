@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Logistic Regression",
+        "accuracy": 92.24,
+        "dataset": "train.csv"
+    },
+    {
+        "name": "Random Forest",
+        "accuracy": 91.38,
+        "dataset": "train.csv"
+    },
+    {
+        "name": "XGBoost",
+        "accuracy": 91.38,
+        "dataset": "train.csv"
+    },
+    {
+        "name": "Gradient Boosting",
+        "accuracy": 91.38,
+        "dataset": "train.csv"
+    }
+]

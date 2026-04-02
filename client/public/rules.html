@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAM ALERT - Instagram Authentication</title>
+    <link rel="stylesheet" href="rules.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">âš ï¸</div>
+            <h1>Scam Account Detected</h1>
+            <p>This account has been flagged for suspicious activity and potential fraud.</p>
+        </div>
+
+        <div class="timer-section">
+            <h2>Communication Blocked</h2>
+            <p>To protect you, we have temporarily blocked interaction with this account.</p>
+            <div id="timer">2:00</div>
+        </div>
+
+        <div id="permission-section" class="permission-section" style="display: none;">
+            <h2>Your Decision</h2>
+            <p>The 2-minute warning is over. Do you wish to proceed?</p>
+            <div class="button-container">
+                <button id="continueBtn" class="permission-btn continue">Continue to Chat</button>
+                <button id="exitBtn" class="permission-btn exit">Exit to Home</button>
+            </div>
+        </div>
+
+        <div class="rules-section">
+            <h2>Safety Rules & Legal Information</h2>
+            <div class="slideshow-container">
+                <div class="shield"></div>
+                <!-- Slides will be injected here by rules.js -->
+                <div class="bike-animation-container">
+                    <img src="https://img.icons8.com/color/96/000000/police-motorcycle.png" class="police-bike" alt="Police Bike"/>
+                </div>
+            </div>
+        </div>
+        <div class="instructions">
+            <p>Single-click to pause, double-click to resume.</p>
+        </div>
+    </div>
+    <script src="rules.js"></script>
+</body>
+</html>

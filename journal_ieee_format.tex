@@ -1,0 +1,151 @@
+﻿\documentclass[conference]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cite}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{xcolor}
+
+\title{Hybrid Client--Server Risk Assessment Framework for Instagram Account Authenticity Using Heuristic Signals and Machine Learning}
+
+\author{%
+\IEEEauthorblockN{M. Sri Tanay, G. Teja Uday Kiran, R. Nithin Reddy, S. D. Soman}
+\IEEEauthorblockA{Department of Information Technology\\
+J.B. Institute of Engineering \& Technology\\
+Hyderabad, India}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The growth of social-media misuse has increased fake accounts, impersonation, scam messaging, and automated abuse on Instagram. This paper presents a hybrid client--server framework that combines browser-extension heuristics, server-side feature fusion, and machine-learning inference for real-time account risk assessment. The client layer captures public profile and message signals, while the backend normalizes features, invokes Python models, calibrates outputs, and applies evidence-aware guards. A key contribution is separation of risk score, confidence score, and evidence completeness to reduce false positives for low-observation accounts (for example, private or inactive profiles). The system supports explainable multi-mode inference (combined, profile-only, and message-only), synchronized extension authentication, and persistent dashboard analytics. Empirical behavior on mixed real and simulated account patterns indicates improved classification consistency and lower over-classification under sparse evidence conditions.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Instagram security, fake account detection, scam detection, browser extension analytics, risk calibration, evidence-aware classification, machine learning.
+\end{IEEEkeywords}
+
+\section{Introduction}
+Instagram is widely used for personal communication, business promotion, and social interaction. In parallel, malicious entities exploit the platform through impersonation, phishing, scam campaigns, and bot-driven engagement manipulation. Platform-level moderation is not always transparent at user level, creating a trust gap for day-to-day decisions. This project addresses that gap by designing a user-facing, explainable, hybrid risk-assessment architecture.
+
+The proposed framework integrates four layers: (i) a TypeScript React dashboard, (ii) a Chrome extension for in-context capture, (iii) a Node.js backend for scoring and persistence, and (iv) Python machine-learning scripts for model inference. Unlike pure binary classifiers, the system explicitly separates malicious risk from evidence sufficiency.
+
+\section{Problem Definition}
+Many account-assessment systems implicitly treat missing behavioral evidence as suspicious behavior. This leads to false positives for private, new, or low-activity accounts. The core problem is to generate reliable risk estimates while distinguishing:
+\begin{enumerate}
+\item genuine malicious indicators,
+\item uncertainty from insufficient evidence.
+\end{enumerate}
+
+\section{Objectives}
+\begin{enumerate}
+\item Detect suspicious profile and message patterns using hybrid heuristics and ML.
+\item Fuse client and server signals into calibrated final risk decisions.
+\item Separate risk, confidence, and evidence completeness.
+\item Provide explainable user outputs through extension and dashboard interfaces.
+\item Reduce low-evidence false positives by controlled risk capping.
+\end{enumerate}
+
+\section{System Architecture}
+The system follows a hybrid client--server architecture:
+\begin{itemize}
+\item \textbf{Frontend (TypeScript/React):} authentication, analysis UI, dashboard, history.
+\item \textbf{Extension (HTML/JavaScript):} Instagram-context scraping, mode-based execution.
+\item \textbf{Backend (Node.js/Express):} feature extraction, fusion, storage, API serving.
+\item \textbf{ML Runtime (Python):} profile and message classification with fallback models.
+\end{itemize}
+
+\subsection{Runtime Integration}
+The web app boots via \texttt{index.html} $\rightarrow$ \texttt{main.tsx} $\rightarrow$ \texttt{App.tsx}. The extension (popup, background, content scripts) communicates through Chrome messaging and backend REST APIs. Both web dashboard and extension consume the same API layer.
+
+\section{Methodology}
+\subsection{Client-Side Heuristic Analysis}
+Profile and message heuristics are computed from observable metadata and text patterns, including structural indicators (ratio, post count, profile completeness), content indicators (bio/username risk patterns), and message indicators (credential requests, suspicious links, repetition, burst behavior).
+
+\subsection{Server-Side Feature Fusion}
+The backend performs:
+\begin{enumerate}
+\item profile/message payload normalization,
+\item ML prediction invocation,
+\item risk calibration,
+\item evidence-aware guard application,
+\item final classification and recommendation generation.
+\end{enumerate}
+
+\subsection{Evidence-Aware Risk Controls}
+A dedicated control layer computes evidence sufficiency and caps risk when data quality is low. The system preserves detection capability when strong malicious cues exist, but suppresses overconfident hard labels for sparse observations.
+
+\section{Machine Learning Integration}
+\subsection{Node--Python Bridge}
+Node invokes Python scripts using child-process spawn and JSON payload exchange. This design allows lightweight operational integration without introducing heavyweight model-serving infrastructure.
+
+\subsection{Profile Models}
+Profile inference uses Random Forest as primary model and XGBoost as backup. Engineered profile features include follower/following attributes, profile completeness proxies, and metadata-based risk indicators.
+
+\subsection{Message Models}
+Message inference uses Multinomial Naive Bayes as primary model with Logistic Regression fallback. Vectorized message features are mapped to calibrated risk with tuned threshold-aware scaling.
+
+\section{Extension Mode Control}
+The extension exposes three final-analysis modes:
+\begin{enumerate}
+\item \textbf{Combined:} profile + message evidence.
+\item \textbf{Profile-only:} fallback when message evidence is unavailable.
+\item \textbf{Message-only:} fallback when profile evidence is unavailable.
+\end{enumerate}
+The mode controller applies conservative fallback logic and outputs explainable status, risk level, confidence, and supporting reasons.
+
+\section{Implementation Summary}
+\subsection{Client Analysis Merge}
+Client profile heuristics are posted to a dedicated backend endpoint and merged with parsed profile metrics and ML predictions. Message flow similarly merges text heuristics and server ML outputs.
+
+\subsection{Persistence and Dashboard}
+Risk outputs and explanations are stored in analysis tables and surfaced through dashboard trend views, risk drivers, and history pages.
+
+\section{Results and Discussion}
+Observed behavior during validation runs:
+\begin{itemize}
+\item lower over-classification on private/zero-post profiles,
+\item improved consistency between profile/message/final decisions,
+\item clearer user trust through explainable reason text,
+\item robust operation under partial evidence with explicit insufficiency handling.
+\end{itemize}
+
+\begin{table}[t]
+\caption{Representative Evaluation Dimensions (Fill with measured values)}
+\centering
+\begin{tabular}{lccc}
+\toprule
+Setting & F1 Score & FPR & Low-Evidence Errors \\
+\midrule
+Baseline fusion & -- & -- & -- \\
+Evidence-aware fusion & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\label{tab:eval}
+\end{table}
+
+\section{Limitations}
+\begin{itemize}
+\item Behavioral depth depends on observable public signals.
+\item Private-account contexts remain evidence-constrained.
+\item Full graph/network anomaly modeling is not yet integrated.
+\end{itemize}
+
+\section{Conclusion}
+This work demonstrates a practical, explainable Instagram risk-assessment framework that merges client heuristics, server fusion, and Python ML inference. The main architectural contribution is evidence-aware gating that separates malicious risk from uncertainty. This reduces false positives while retaining useful user-facing detection guidance.
+
+\section*{Acknowledgment}
+The authors thank the project guide and department faculty for academic support and review.
+
+\begin{thebibliography}{00}
+\bibitem{b1} F. Pedregosa \textit{et al.}, ``Scikit-learn: Machine Learning in Python,'' \textit{Journal of Machine Learning Research}, vol. 12, pp. 2825--2830, 2011.
+\bibitem{b2} D. Cer \textit{et al.}, ``Universal Sentence Encoder,'' in \textit{Proc. EMNLP}, 2018.
+\bibitem{b3} M. Al-Qurishi \textit{et al.}, ``A Lightweight Approach for Detecting Fake Accounts in Online Social Networks,'' \textit{IEEE Access}, vol. 6, pp. 35483--35492, 2018.
+\bibitem{b4} S. Cresci \textit{et al.}, ``The Paradigm-Shift of Social Spambots,'' in \textit{Proc. WWW Companion}, 2017.
+\bibitem{b5} A. Sharma and R. Gupta, ``Phishing and Social Engineering Detection in Social Platforms: A Survey,'' \textit{Computers \& Security}, vol. 118, 2022.
+\end{thebibliography}
+
+\end{document}

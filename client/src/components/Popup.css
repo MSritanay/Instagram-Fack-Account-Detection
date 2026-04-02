@@ -1,0 +1,48 @@
+.popup-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 300px;
+    border-radius: 10px;
+    color: #fff;
+    transform: translateX(120%);
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.popup-container.success {
+    background: rgba(0, 255, 127, 0.8);
+    border: 1px solid #00ff7f;
+    box-shadow: 0 0 15px rgba(0, 255, 127, 0.7);
+}
+
+.popup-container.error {
+    background: rgba(255, 69, 0, 0.8);
+    border: 1px solid #ff4500;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.7);
+}
+
+.popup-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.popup-content p {
+    margin: 0;
+}
+
+.popup-content button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* AUTH PAGES */
+.auth-container {
+  display: flex;
+  height: 100vh;
+}
+
+.visual {
+  flex: 1;
+  animation: pulse 6s infinite;
+}
+
+.blue { background: radial-gradient(#00e5ff, #002233); }
+.green { background: radial-gradient(#00ff99, #003322); }
+.red { background: radial-gradient(#ff3b3b, #330000); }
+
+.form-box {
+  flex: 1;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+}
+
+.dark {
+  background: #0b0f14;
+}
+
+.dark-box {
+  background: #121821;
+  color: white;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  margin-top: 15px;
+}
+
+button.danger {
+  background: #d32f2f;
+}
+
+/* DASHBOARDS */
+.dashboard {
+  padding: 40px;
+}
+
+.dashboard.user {
+  background: #f4f6f8;
+}
+
+.dashboard.admin {
+  background: #0b0f14;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.admin .card {
+  background: #151a21;
+}
+
+.card.danger {
+  border-left: 5px solid red;
+}
+
+/* ANIMATIONS */
+@keyframes pulse {
+  0% { opacity: 0.9; }
+  50% { opacity: 1; }
+  100% { opacity: 0.9; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}

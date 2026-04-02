@@ -1,0 +1,217 @@
+[
+  {
+    "name": "benign-casual-chat",
+    "messages": [
+      "hii",
+      "Are we still meeting around 6 today",
+      "Thanks for helping the project testing",
+      "you should give party 😱"
+    ],
+    "expectedRiskClass": "likely-human",
+    "minRisk": 0,
+    "maxRisk": 35
+  },
+  {
+    "name": "quoted-scam-reporting-context",
+    "messages": [
+      "Someone messaged me saying send OTP for verification",
+      "I blocked him immediately",
+      "Never share OTP with anyone"
+    ],
+    "expectedRiskClass": "likely-human",
+    "minRisk": 20,
+    "maxRisk": 45
+  },
+  {
+    "name": "otp-crypto-thread-user-sample",
+    "messages": [
+      "hiii",
+      "Are we still meeting around 6 today",
+      "no actualy it as the first time we meet it in the ofline moood not in in the insta",
+      "Thanks for helping the project testing",
+      "by saying thanks you were espscaping you should give party",
+      "😱",
+      "Hii there is a quick question to you...",
+      "what is that",
+      "I got a message saying my account needs verification through the otp",
+      "what happen why you are saying like this",
+      "The crypto field members told me to do that for  confirm the some details",
+      "may be connecting valut to the binance but why they need the otp",
+      "It looks a bit of strange though",
+      "Have you look like this messages any before"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 70,
+    "maxRisk": 95
+  },
+  {
+    "name": "direct-credential-theft-no-link",
+    "messages": [
+      "Support team here, we only need your 6-digit code to confirm identity",
+      "share otp now"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 75,
+    "maxRisk": 100
+  },
+  {
+    "name": "trust-building-then-scam",
+    "messages": [
+      "Hey",
+      "Where are you from?",
+      "Do you trade crypto?",
+      "I work with Binance support actually",
+      "Can you help me test wallet verification?",
+      "Send the OTP so I can confirm it works."
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 70,
+    "maxRisk": 100
+  },
+  {
+    "name": "impersonation-without-otp-keyword",
+    "messages": [
+      "This is the security team",
+      "We noticed suspicious activity",
+      "Confirm your account code"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 70,
+    "maxRisk": 100
+  },
+  {
+    "name": "social-engineering-help-request",
+    "messages": [
+      "Bro I'm locked out of my wallet",
+      "They sent code to wrong number",
+      "Can you share the one sent to you?"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 70,
+    "maxRisk": 100
+  },
+  {
+    "name": "multilingual-otp-wallet",
+    "messages": [
+      "otp bhejo jaldi",
+      "wallet verify karna hai"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 70,
+    "maxRisk": 100
+  },
+  {
+    "name": "link-obfuscation-typosquat",
+    "messages": [
+      "verify here b1nance-support dot com",
+      "account check pending send otp"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 75,
+    "maxRisk": 100
+  },
+  {
+    "name": "burst-bot-template",
+    "messages": [
+      "Hello",
+      "Hello",
+      "Hello",
+      "Send code",
+      "Send code",
+      "Send code"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 70,
+    "maxRisk": 100
+  },
+  {
+    "name": "emotional-pressure-wallet-freeze",
+    "messages": [
+      "Please hurry",
+      "Your wallet will be frozen in 5 minutes",
+      "Send the verification code now"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 70,
+    "maxRisk": 100
+  },
+  {
+    "name": "platform-switch-scam-setup",
+    "messages": [
+      "Instagram chat is not secure",
+      "message me on telegram for verification"
+    ],
+    "expectedRiskClass": "suspicious",
+    "minRisk": 45,
+    "maxRisk": 85
+  },
+  {
+    "name": "crypto-investment-trap",
+    "messages": [
+      "Join our trading group",
+      "Guaranteed 15% profit daily",
+      "We only need wallet verification first"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 75,
+    "maxRisk": 100
+  },
+  {
+    "name": "fake-giveaway-btc-otp",
+    "messages": [
+      "You won 0.5 BTC from our event",
+      "Confirm wallet by sending verification code"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 75,
+    "maxRisk": 100
+  },
+  {
+    "name": "conversation-hijack-entry",
+    "messages": [
+      "Hey sorry wrong person earlier",
+      "But quick question",
+      "Can you help verify Binance account?"
+    ],
+    "expectedRiskClass": "suspicious",
+    "minRisk": 45,
+    "maxRisk": 85
+  },
+  {
+    "name": "attachment-indirect-credential-request",
+    "messages": [
+      "Check this screenshot, Binance says my wallet is blocked",
+      "Can you tell me the code they sent?"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 70,
+    "maxRisk": 100
+  },
+  {
+    "name": "group-recruitment-upi-telegram-scam",
+    "messages": [
+      "Looking for business partners desipay",
+      "frequently use upi",
+      "want stable daily income",
+      "only 3-5 hours per day",
+      "earn 1000+ inr daily",
+      "contact us now to get started",
+      "apply telegram @shawn_08957"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 75,
+    "maxRisk": 100
+  },
+  {
+    "name": "unicode-dash-income-bait-telegram",
+    "messages": [
+      "Looking for Business Partners",
+      "Only 3–5 hours per day",
+      "Earn 1000+ INR daily",
+      "Apply Telegram: @Shawn_08957"
+    ],
+    "expectedRiskClass": "high-risk",
+    "minRisk": 75,
+    "maxRisk": 100
+  }
+]

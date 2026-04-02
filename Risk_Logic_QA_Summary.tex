@@ -1,0 +1,60 @@
+﻿\documentclass[12pt]{article}
+\title{Asset Defender Risk Logic Q\&A Summary}
+\author{}
+\date{\today}
+\begin{document}
+\maketitle
+
+\section*{Q\&A Summary}
+
+1) Source of truth in production
+
+- Live popup verdict: popup-computed finalRisk.
+- Persisted/reporting history: server final_predictions.risk_score.
+- Current state: not guaranteed identical.
+
+2) Unify weighted formula (0.3/0.7 vs 0.6/0.4)
+
+- Yes, unify everywhere.
+- Use one shared formula constant across popup, server, and reporting UI.
+
+3) Rename "Moderate" / "modern" wording
+
+- Yes, rename for clarity.
+- Recommended labels: Very Low, Low, Medium, High, Critical.
+
+4) Hard-threshold docs in one table
+
+- Yes.
+- Include risk bands, category rules (hacker/scam/bot/suspicious/genuine), override rules, and boundary examples.
+
+5) Owner of final classification logic
+
+- Recommended production owner: server.
+- Popup can show provisional output until server confirmation.
+- If both paths remain, enforce parity tests.
+
+6) Persist final category + exact reasons
+
+- Yes, required for auditability.
+- Persist category, score, triggered rule IDs, feature values, model/heuristic version, timestamp, and source.
+
+7) Conflict policy when popup and server disagree
+
+- Server wins for stored/reporting/enforcement decisions.
+- UI shows provisional client result, then replaces with confirmed server result.
+- Log mismatch diffs.
+
+8) Regression tests for thresholds (39/40, 69/70, etc.)
+
+- Yes.
+- Add below/at/above boundary tests, override-path tests, insufficient-evidence tests, and parity tests.
+
+\section*{Additional Questions Recommended}
+
+1. Should popup scoring be production-disabled and used only for offline/debug mode?
+2. Should every decision store a deterministic decision-trace payload for replay?
+3. What server confirmation SLA should replace provisional client output?
+4. Which threshold set is versioned as v1.0, and how do we roll back v1.1 safely?
+
+\end{document}
