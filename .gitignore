@@ -4,6 +4,39 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+*.zip
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.err.log
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.toc
+*.pdf
+*.pptx
+*.docx
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.mp4
+*.mov
+
+# Large project assets and datasets
+attached_assets/
+generated_documents/
+presentation/
+messagedatasets/
+profiledatset/
+fake_insta/
+.local/
+.env
 
 # Virtual environments
 vir/
